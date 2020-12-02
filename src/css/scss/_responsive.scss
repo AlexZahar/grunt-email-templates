@@ -1,0 +1,57 @@
+/* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+
+table[class="body"] {
+  @media only screen and (max-width: $width+40) {
+    tbody {
+      background-color: white;
+    }
+    table-maine
+    // Type
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-weight: 600 !important;
+    }
+
+    h1 {
+      font-size: 22px !important;
+    }
+
+    h2 {
+      font-size: 18px !important;
+    }
+
+    h3 {
+      font-size: 16px !important;
+    }
+    // margin-top: 30px;
+    width: 100%;
+    // Spacing
+    .content,
+    .wrapper {
+      padding: 0px !important;
+    }
+
+    .container {
+      padding: 0 !important;
+      width: 100% !important;
+    }
+    .main-logo {
+      padding-top: 30px;
+    }
+    // Buttons
+    .btn table,
+    .btn a {
+      width: 100% !important;
+      max-width: 450px;
+      // margin-top: -25px;
+      word-wrap: break-word;
+    }
+    .statement_message {
+      max-width: 170px;
+    }
+  }
+}

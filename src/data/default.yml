@@ -1,0 +1,70 @@
+# To compile variables with Grunt, first define the variables in here and import the default template inside the .hbs email template in order to use them. 
+# To use a variable e.g. type in the template {{default.firstNameInviter}}
+
+# General email vars
+unsubscribe_url: '{{unsubscribe_url}}'
+backendLink: '{{backendLink}}'
+tag_unsubscribe_url: '{{tag_unsubscribe_url}}'
+
+# invitation email variables
+firstNameInviter: '{{firstNameInviter}}'
+lastNameInviter: '{{lastNameInviter}}'
+collectionName: '{{collectionName}}'
+linkToSignUpPage: '{{linkToSignUpPage}}'
+
+# Verify email variables
+auth0_userEmail: '{{ user.email }}'
+auth0_verifyUrl: '{{url}}'
+
+# Contribution email variables
+firstNameUser: '{{firstNameUser}}'
+
+# Welcome email variables
+linkToUserAccount: '{{linkToUserAccount}}'
+
+# Merchant Statement email Variables
+contribution_net_amount_orange: '{{{contribution_net_amount_orange}}}'
+contribution_message: '{{contribution_message}}'
+merchant_name: '{{merchant_name}}'
+statement_sent_date: '{{statement_sent_date}}'
+address_street: '{{address_street}}'
+address_zip_city: '{{address_zip_city}}'
+address_country: '{{address_country}}'
+statement_full_date: '{{statement_full_date}}'
+statement_id: '{{statement_id}}'
+contribution_gross_amount: '{{contribution_gross_amount}}'
+contribution_fees: '{{contribution_fees}}'
+contribution_net_amount: '{{contribution_net_amount}}'
+ifTransactions: '{{#if transactions }}'
+eacthTransactions: '{{#each transactions}}'
+date_and_time: '{{this.date_and_time}}'
+amount: '{{this.amount}}'
+each: '{{/each}}'
+if: '{{/if}}'
+merchant_id: '{{merchant_id}}'
+matched_contributions: '{{matched_contributions}}'
+
+# Bayce
+user_name: '{{inquiry.name}}'
+user_company: '{{inquiry.company}}'
+user_email: '{{inquiry.email}}'
+inquiry_subject: '{{inquiry.subject}}'
+inquiry_message: '{{inquiry.message}}'
+bayceLink: 'https://staging-bayce-marketing.baro-pfannenstein.de/'
+confirmation_message: 'The inquiry was sent successfully! We will get back to you soon.'
+
+
+# ARTvent artists
+# artistOfTheDayName: '{{artistOfTheDayName}}'
+# dateOfCard: '{{dateOfCard}}'
+# artistSlug: '{{artistSlug}}'
+# emailSupport: '{{emailSupport}}'
+# personalizedArtistMessage: "{{personalizedArtistMessage}}"
+
+artistOfTheDayName: "Lelli e Masotti"
+dateOfCard: "1st December 2020"
+artistSlug: "lem2"
+emailSupport: "support@contribute.to"
+
+
+

@@ -1,0 +1,56 @@
+---
+layout: default.hbs
+subject: Branded transaction email example
+---
+<span class="preheader">{{default.firstNameUser}}, welcome to Contribute.to!</span>
+
+<table class="main">
+
+  <tr>
+    <td class="wrapper">
+      <div class="header">
+        <a href="{{default.backendLink}}" class="logo-wrapper"><img
+            src="https://contribute.to/assets/images/logo-contribute-to.png" alt="Contribute.to" alt="Contribute.to"
+            class="main-logo"></a>
+        {{!-- <hr class="solid--top"> --}}
+      </div>
+      <table>
+
+        <tr>
+          <td>
+            <p> <strong class="medium">Hi {{default.firstNameUser}}</strong>,</p>
+            <p>Thank you for verifying your email address.</p>
+            <p> You can now use <a href="https://contribute.to" class="gray-link">Contribute.to</a> to help artists get
+              the recognition
+              they deserve from contributors! You
+              can start creating your collection below.
+            </p>
+
+            <p> <strong class="medium">We are looking forward to seeing your collection on <a
+                  href="https://contribute.to" class="medium">Contribute.to</a>!
+              </strong><br>Your <a href="https://contribute.to" class="gray-link">Contribute.to</a> team</p>
+            {{> button type='primary' align='center' url='{{linkToUserAccount}}' title='Create Your Collection Now' }}
+          </td>
+        </tr>
+      </table>
+      <div class="footer">
+        <table class="footer-wrapper">
+          <tr>
+            <td class="align-center">
+              <a href="{{default.backendLink}}"><img src="https://contribute.to/assets/images/ic-contribute-to.png"
+                  alt="Contribute.to" class="secondary-logo"></a>
+              <p><a href="https://www.laterpay.net/legal/terms" class="terms_text" style="padding-right: 15px;">Terms of
+                  service</a>
+                <a href="https://www.laterpay.net/legal/terms" class="terms_text" style="padding-right: 15px;">Privacy
+                  Policy</a>
+                <a href=" {{default.unsubscribe_url}}" class="terms_text">Unsubscribe</a></p>
+              <p style="color:#C6C6C6; font-size:13px">
+                LaterPay, Inc. <span style="color:#746D77; font-size:13px">205
+                  E 42nd St, New York, NY 10017, USA </span> <br> &#169;2020 LaterPay</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>

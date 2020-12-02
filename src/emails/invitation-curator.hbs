@@ -1,0 +1,66 @@
+---
+layout: default.hbs
+subject: Branded transaction email example
+---
+<span class="preheader">You were invited to join contribute.to as a curator!</span>
+
+<table class="main">
+
+    <tr>
+        <td class="wrapper">
+            <div class="header">
+                <a href="{{default.backendLink}}" class="logo-wrapper"><img
+                        src="https://contribute.to/assets/images/logo-contribute-to.png" alt="Contribute.to"
+                        class="main-logo"></a>
+
+            </div>
+            <table>
+
+                <tr>
+                    <td>
+                        <p> {{default.firstNameInviter}} {{default.lastNameInviter}} is inviting you to
+                            join <a href="https://contribute.to" class="gray-link">Contribute.to</a> and be a Curator of
+                            the as a Curator for the <strong class="medium">{{default.collectionName}}</strong>
+                            collection. </p>
+                        {{> button type='primary' align='center' url='{{linkToSignUpPage}}' title='Accept Invitation' }}
+
+                        <p> Curators ultimately decide which Artists appear on <a href="https://contribute.to"
+                                class="gray-link">Contribute.to</a>. As a Curator, you have the
+                            ability to manage this Collection and invite Artists to it.
+                        </p>
+                        <p>Your name and profile picture will appear on the Cards of the Artists you invite. Only invite
+                            Artists you’ll be proud to be associated with.
+
+                        </p>
+
+                        <p>We are very excited to welcome you to <a href="https://contribute.to"
+                                class="gray-link">Contribute.to</a>!</p>
+                        <p>- The <a href="https://contribute.to" class="gray-link">Contribute.to</a> team</p>
+                        <p><a href="https://contribute.to" style="color:#6C1D85; text-decoration:underline;">Learn more
+                                about Contribute.to</a>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <div class="footer">
+                <table class="footer-wrapper">
+                    <tr>
+                        <td class="align-center">
+                            <a href="{{default.backendLink}}"><img ic-contribute-to
+                                    src="https://contribute.to/assets/images/ic-contribute-to.png" alt="Contribute.to"
+                                    class="secondary-logo"></a>
+                            <p><a href="https://www.laterpay.net/legal/terms" class="terms_text"
+                                    style="padding-right: 15px;">Terms of service</a>
+                                <a href="https://www.laterpay.net/legal/terms" class="terms_text"
+                                    style="padding-right: 15px;">Privacy Policy</a>
+                                <a href=" {{default.unsubscribe_url}}" class="terms_text">Unsubscribe</a></p>
+                            <p style="color:#C6C6C6; font-size:13px">
+                                LaterPay, Inc. <span style="color:#746D77; font-size:13px">205
+                                    E 42nd St, New York, NY 10017, USA </span> <br> &#169;2020 LaterPay</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>

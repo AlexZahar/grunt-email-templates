@@ -1,0 +1,50 @@
+---
+layout: default.hbs
+subject: Branded transaction email example
+---
+<span class="preheader">Welcome to contribute.to!</span>
+
+<table class="main">
+
+  <tr>
+    <td class="wrapper">
+      <div class="header">
+        <a href="{{backendLink}}" class="logo-wrapper"><img
+            src="https://staging.baro-pfannenstein.de/lp03-426-frontend-contribute-to/assets/images/logo-contribute-to.png"
+            alt="Contribute.to" class="main-logo"></a>
+        <hr class="solid--top">
+      </div>
+      <table>
+        <tr>
+          <td>
+            <p>Dear <strong class="medium">{{firstNameMerchant}}</strong>,</p>
+            <p>thank your for completing your registration with <a href="https://contribute.to">contribute.to</a>!</p>
+            <p>Your account is now live!</p>
+
+
+            {{> button type='primary' align='center' url='{{backendLink}}' title='Make Contributions Now' }}
+          </td>
+        </tr>
+      </table>
+      <div class="footer">
+        <table>
+          <tr>
+          <tr>
+            <td>
+              <hr class="solid--bottom">
+            </td>
+          </tr>
+          <td class="align-center footer-wrapper">
+            <a href="{{backendLink}}"><img src="https://contribute.to/assets/images/ic-contribute-to.png"
+                alt="Contribute.to" class="secondary-logo"></a>
+            <p><a href="https://contribute.to">Contribute.to</a> is a service of LaterPay, Inc. <br> LaterPay, Inc. 205
+              E 42nd St, New York, NY 10017, USA</p>
+            <p><a href="#" style="color:#40B4E5">Data Privacy</a> &#124; <a href="#" style="color:#40B4E5">Terms &
+                Conditions</a> &#124; <a href="#" style="color:#40B4E5">Unsubscribe</a></p>
+          </td>
+  </tr>
+</table>
+</div>
+</td>
+</tr>
+</table>

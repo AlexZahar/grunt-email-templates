@@ -1,0 +1,262 @@
+/* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+
+body {
+  background-color: $grey;
+  text-decoration: none !important;
+}
+
+.body {
+  background-color: $grey;
+  width: 100%;
+}
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  display: block;
+  margin: 0 auto !important; /* makes it centered */
+  max-width: $width;
+  padding: 10px;
+  width: auto !important;
+  width: $width;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+  display: block;
+  margin: 0 auto;
+  max-width: $width;
+  padding: 10px;
+}
+hr.solid--top {
+  border-top: 1px solid $divider-color !important;
+  // border-radius: 5px;
+  margin-bottom: 30px;
+  border-width: 0;
+  margin-top: 14px;
+  width: 100% !important;
+  // display: inline;
+  position: relative;
+  margin: 0 !important;
+  // overflow: visible !important;
+}
+hr.solid--statement {
+  border-top: 1px solid $divider-color !important;
+  // border-radius: 5px;
+  // margin-bottom: 30px;
+  border-width: 0;
+  // margin-top: 14px;
+  width: 100% !important;
+  // display: inline;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 !important;
+  // overflow: visible !important;
+}
+
+hr.solid--statement-dark {
+  border-top: 1px solid #3f3f3f !important;
+  // border-radius: 5px;
+  // margin-bottom: 30px;
+  border-width: 0;
+  // margin-top: 14px;
+  width: 100% !important;
+  // display: inline;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 0px !important;
+  // overflow: visible !important;
+}
+hr.solid--bottom {
+  border-top: 1px solid $divider-color !important;
+  // border-radius: 5px;
+  border-width: 0;
+  // margin-bottom: -90px !important;
+  // padding-bottom: -60px !important;
+  // margin-top: 14px;
+  // overflow: visible !important;
+}
+
+/* -------------------------------------
+    HEADER, FOOTER, MAIN
+------------------------------------- */
+
+.main {
+  background: #ffffff;
+  // border: 1px solid darken($grey, 5);
+  border-radius: $br;
+  width: 100%;
+}
+
+.wrapper {
+  padding: $padding;
+}
+
+// Adds padding to content - use this instead of paragraphs for consistent padding/margin rendering
+.content-block {
+  padding: 0 0 $padding;
+}
+
+.header {
+  margin-bottom: $padding;
+  // margin-top: ($padding - 10);
+  width: 100%;
+  clear: both;
+
+  background-color: white;
+}
+// .main-logo-wrapper{
+// width: 100% !important;
+// }
+.main-logo {
+  // padding-top: 10px;
+  width: 189px;
+  padding-bottom: 14px;
+  padding-top: 40px;
+  // flex-grow: 1;
+  // margin: 0 auto;
+  // text-align: center;
+  // justify-self: center;
+  margin: 0 auto;
+  display: block;
+  background-color: white;
+  //  align-items: center;
+}
+
+.logo_wrapper {
+  // width: 100% !important;
+  // display: flex;
+  width: 190px;
+  margin: 0 auto;
+}
+.secondary-logo {
+  width: 23px;
+  padding-bottom: 31px;
+  padding-top: 80px;
+}
+.footer {
+  clear: both;
+  width: 100%;
+
+  * {
+    color: $body-font-color;
+    font-size: 12px;
+  }
+
+  td {
+    padding: 10px 0;
+  }
+}
+.statement_data_padding {
+  padding-top: 180px;
+}
+.footer-wrapper {
+  max-width: 460px;
+  margin: 0 auto;
+}
+.statement_message {
+  max-width: 210px;
+  font-size: 10px;
+  line-height: 1.3;
+  color: #6c6c6c;
+}
+.merchant_address {
+  max-width: 150px;
+}
+.contribution-wrapper {
+  width: 100%;
+  // display: flex;
+  // padding-bottom: 180px;
+  position: relative;
+  // margin-bottom: 200px;
+  // max-height: 200px;
+
+  .contribution-sum {
+    max-width: 500px;
+    // flex-direction: column;
+    // display: flex;
+    // height: 157px;
+    margin: 0 auto;
+
+    // border: 3px solid green;
+    // justify-content: center;
+  }
+  .shine_amount_wrapper {
+    display: flex;
+    // justify-content: center;
+    margin: auto;
+    max-width: 452px;
+  }
+  .currency {
+    font-size: 24px;
+    // padding-top: -60px !important;
+    // vertical-align: top;
+  }
+  .amount {
+    color: #ff874c;
+    font-size: 64px;
+    text-align: center;
+    display: flex;
+    // padding-top: 46px;
+    // padding-bottom: 56px;
+
+    // margin-top: 55px;
+    // margin-bottom: 55px;
+    // padding-top: 56px;
+    // margin: 0;
+    // position: absolute;
+    // top: 50% !important;
+    // left: 50% !important;
+    // -ms-transform: translate(-50%, -50%) !important;
+    // transform: translate(-50%, -50%) !important;
+  }
+
+  .strong_amount {
+    vertical-align: middle;
+    height: 50px;
+    font-weight: 600;
+    margin: auto !important;
+  }
+  .row-merchant_data {
+    width: 100%;
+  }
+
+  .row-transaction_data {
+    width: 100%;
+    margin-top: 55px;
+  }
+}
+
+.row-statement_data {
+  width: 100%;
+  // margin-top: 552px;
+  // padding-top: 60px;
+}
+.terms_text {
+  color: #746d77b3;
+  font-size: 12px;
+}
+.bayce_header {
+  max-width: 456px;
+  display: block;
+  margin: 0 auto;
+
+  .bayce_logo-wrapper {
+    width: 100%;
+  }
+}
+.bayce_metadata {
+  font-size: 14px;
+}
+.card_reveal_title {
+  padding: 35px 0;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+.italic-text {
+  font-style: italic;
+}

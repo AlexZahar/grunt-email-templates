@@ -1,0 +1,171 @@
+---
+layout: default.hbs
+subject: Branded transaction email example
+---
+
+<table class="main">
+
+    <tr>
+        <td class="wrapper">
+            <div class="header">
+                <a href="{{default.backendLink}}" class="logo-wrapper"><img
+                        src="https://contribute.to/assets/images/logo-contribute-to.png" alt="Contribute.to"
+                        alt="Contribute.to" class="main-logo"></a>
+
+            </div>
+            <table style="width:100% !important">
+                {{!-- MERCHANT DATA --}}
+                <tr>
+                    <td class="row-merchant_data">
+
+                        <p style="font-size:12px; line-height:17px !important; margin-bottom: -3px;"> <strong
+                                class="medium">
+                                {{ default.merchant_name }}</strong> <span class="align-right"
+                                style="float:right;">{{ default.statement_sent_date }} </span> <br>
+                        <div class="merchant_address">
+                            <p style="font-size:12px; line-height:17px"> {{ default.address_street }} <br>
+                                {{ default.address_zip_city }} <br> {{ default.address_country }}</p>
+                        </div>
+
+                        </p>
+
+
+
+                    </td>
+                </tr>
+                {{!-- CONTRIBUTION ROW --}}
+                <div class=" contribution-wrapper ">
+
+
+                    <tr>
+                        <td style="height: 300px;">
+
+                            <div class="contribution-sum align-center" style="margin:25px auto; height: 60px;">
+
+                                <p
+                                    style="font-size:16px; max-width: 164px; margin:0 auto; overflow-wrap: break-word; padding-bottom: 20px;">
+                                    {{default.contribution_message}}</p>
+
+                                <div class="shine_amount_wrapper">
+
+                                    <div><img
+                                            src="https://staging.baro-pfannenstein.de/lp03-426-frontend-contribute-to/assets/images/contribution-shine_left.png"
+                                            alt=""></div>
+
+                                    <div class="strong_amount"
+                                        style="margin: auto auto; color: #ff874c; font-size: 64px; text-align: center;">
+                                        {{default.contribution_net_amount_orange}}
+                                        {{!-- 52.3 --}}
+                                    </div>
+
+                                    <div><img
+                                            src="https://staging.baro-pfannenstein.de/lp03-426-frontend-contribute-to/assets/images/contribution-shine_right.png"
+                                            alt=""></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </div>
+
+
+
+                {{!-- STATEMENT ROW --}}
+                <div>
+
+                    <tr>
+
+                        <td class="row-statement_data">
+                            <p style="margin-bottom:0px !important; font-size:12px; ">
+                                <strong class="medium" style="font-size: 24px;"> Monthly Statement</strong> <br>
+                                For Period <strong class="medium">{{ default.statement_full_date }}</strong> <br>
+                                Document <strong class="medium">#{{ default.statement_id}}</strong> <br>
+                                <hr class="solid--statement">
+                                <strong class="medium" style="font-size:12px">Total contributions <span
+                                        class="align-right" style="float:right;">{{ default.contribution_gross_amount }}
+                                    </span></strong> <br>
+                                <strong class="medium" style="font-size:12px">Matched contributions <span
+                                        class="align-right" style="float:right;">{{ default.matched_contributions }}
+                                    </span></strong> <br>
+                                <span style="color:#6c6c6c; font-size:12px">Fees <span class="align-right"
+                                        style="float:right;">{{ default.contribution_fees }}
+                                    </span></span> <br>
+                                <hr class="solid--statement-dark">
+
+                                <strong class="medium" style="font-size: 16px;">You earned <span class="align-right"
+                                        style="float:right;">{{ default.contribution_net_amount }} </span></strong> <br>
+                            <div class="statement_message">Your
+                                contributions
+                                were already
+                                transferred
+                                to your bank account via our weekly payouts.</div>
+
+
+                            </p>
+                        </td>
+                    </tr>
+                    {{ default.ifTransactions }}
+                    {{!-- TRANSACTIONS ROW --}}
+                    <tr class="row-transaction_data" style="line-height:18px;">
+                        <td>
+                            <p style="margin-top: 45px; margin-bottom:0 !important;  ">
+                                <strong class="medium" style="font-size: 16px;">Transaction
+                                    Details</strong> <br>
+                            </p>
+                            <table style="width:100% !important">
+                                <tr class="transactions">
+                                    <td>
+                                        {{default.eacthTransactions}}
+                                        <p style="font-size: 12px;">
+                                            <hr class="solid--statement">
+
+
+                                            <span style="font-size:12px; color:#6c6c6c;">{{ default.date_and_time}}
+                                            </span><span class="align-right"
+                                                style="float:right; font-size:16px; color:#6c6c6c;">{{ default.amount }}
+                                            </span>
+                                            <br>
+                                        </p>
+                                        {{default.each}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    {{default.if}}
+                </div>
+
+            </table>
+            <div class="footer">
+                <table class="footer-wrapper">
+                    <tr>
+
+
+                        <td class="align-center">
+                            <p
+                                style="margin: 0; line-height: 24px; margin-bottom: 15px; color: #6c6c6c; font-size: 12px;">
+
+                                <a href="{{default.backendLink}}"><img
+                                        src="https://contribute.to/assets/images/ic-contribute-to.png"
+                                        alt="Contribute.to" alt="Contribute.to" class="secondary-logo"></a>
+                                <br>
+                                <a href="https://contribute.to">Contribute.to</a> is a service of LaterPay, Inc.
+                                <br>
+                                LaterPay, Inc. 205
+                                E 42nd St, New York, NY 10017, USA
+                                <br>
+                                <span style="font-size:10px;">Creator ID: {{ default.merchant_id }}</span>
+                                <br>
+                                <a href="https://www.laterpay.net/legal/terms" style="color:#40B4E5">Data Privacy</a>
+                                &#124;
+                                <a href="https://www.laterpay.net/legal/terms" style="color:#40B4E5">Terms &
+                                    Conditions</a>
+                                &#124; <a href=" {{default.tag_unsubscribe_url}}" style="color:#40B4E5">Unsubscribe</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>

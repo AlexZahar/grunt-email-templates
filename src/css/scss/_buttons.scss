@@ -1,0 +1,79 @@
+/* -------------------------------------
+    BUTTONS
+------------------------------------- */
+
+.btn {
+  width: 100%;
+  margin: 0 auto;
+  height: 55px;
+  padding-top: 25px;
+  
+  > tr > td {
+    padding-bottom: 40px;
+  }
+  
+  table {
+    width: 301px !important;
+    // width: auto;
+  }
+
+  table td {
+    background-color: #ffffff;
+    border-radius: $btn-br;
+    text-align: center;
+  }
+
+  a {
+    background-color: #ffffff;
+    // border: solid 1px $primary-color;
+    border-radius: $btn-br;
+    color: #40b4e5;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 0;
+    padding: 12px 25px;
+    // padding-top: 14px;
+    // padding-bottom: 18px;
+    text-decoration: none;
+    // text-transform: capitalize;
+  }
+}
+
+// Primary call to action button
+.btn-primary {
+  table td {
+    background: #6C1D85;
+    // background: linear-gradient(
+    //   90deg,
+    //   rgba(255, 135, 76, 1) 0%,
+    //   rgba(253, 184, 95, 1) 100%
+    // );
+    border-color: transparent;
+  }
+
+  a {
+    background:#6C1D85;
+    // background: linear-gradient(
+    //   90deg,
+    //   rgba(255, 135, 76, 1) 0%,
+    //   rgba(253, 184, 95, 1) 100%
+    // );
+    color: #ffffff;
+    border-color: transparent;
+  }
+}
+
+// Secondary button
+.btn-secondary {
+  table td {
+    background-color: transparent;
+  }
+
+  a {
+    background-color: transparent;
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+}

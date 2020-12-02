@@ -1,0 +1,56 @@
+---
+layout: default.hbs
+subject: Branded transaction email example
+---
+
+<span class="preheader">Verify Your Email Address</span>
+<table class="main">
+
+    <tr>
+        <td class="wrapper">
+            <div class="header">
+                <a href="{{default.backendLink}}" class="logo-wrapper"><img
+                        src="https://contribute.to/assets/images/logo-contribute-to.png" alt="Contribute.to"
+                        alt="Contribute.to" class="main-logo"></a>
+
+            </div>
+            <table>
+
+                <tr>
+                    <td>
+                        <p>Verify your email to finish signing up for Contribute.to. </p>
+                        <p>Please confirm that {{ default.auth0_userEmail }} is yours by clicking the button or using
+                            the link below.
+                        </p>
+
+                        {{> button type='primary' align='center' url='{{ url }}' title='Verify' }}
+
+
+                        <p><a href="{{ default.auth0_verifyUrl }}"
+                                style="color:#6C1D85; text-decoration:underline;">{{ default.auth0_verifyUrl }}</a>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <div class="footer">
+                <table class="footer-wrapper">
+                    <tr>
+                        <td class="align-center">
+                            <a href="{{default.backendLink}}"><img
+                                    src="https://contribute.to/assets/images/ic-contribute-to.png" alt="Contribute.to"
+                                    class="secondary-logo"></a>
+                            <p><a href="https://www.laterpay.net/legal/terms" class="terms_text"
+                                    style="padding-right: 15px;">Terms of service</a>
+                                <a href="https://www.laterpay.net/legal/terms" class="terms_text"
+                                    style="padding-right: 15px;">Privacy Policy</a>
+                                <a href=" {{default.unsubscribe_url}}" class="terms_text">Unsubscribe</a></p>
+                            <p style="color:#C6C6C6; font-size:13px">
+                                LaterPay, Inc. <span style="color:#746D77; font-size:13px">205
+                                    E 42nd St, New York, NY 10017, USA </span> <br> &#169;2020 LaterPay</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>

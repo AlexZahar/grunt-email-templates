@@ -1,0 +1,92 @@
+---
+layout: default.hbs
+subject: Branded transaction email example
+---
+<span class="preheader">Congratulations, {{default.firstNameUser}}! You've received a new contribution!</span>
+
+<table class="main">
+
+
+
+
+  <tr>
+    <td class="wrapper">
+      <div class="header">
+        <a href="{{default.backendLink}}" class="logo-wrapper"><img
+            src="https://contribute.to/assets/images/logo-contribute-to.png" alt="Contribute.to" alt="Contribute.to"
+            class="main-logo"></a>
+        <hr class="solid--top">
+      </div>
+      <table>
+        <tr>
+          <td>
+            <p><strong class="medium">Hi {{default.firstNameUser}}</strong>,</p>
+            <p>Great news - you've just received a brand new contribution on
+              <a href="https://contribute.to">Contribute.to</a>! Congratulations!</p>
+
+
+
+          </td>
+        </tr>
+
+
+
+        {{!-- CONTRIBUTION ROW --}}
+
+        <tr class=" contribution-wrapper ">
+          <td>
+            <div class="contribution-sum align-center" style="margin:25px auto; height: 60px;">
+
+
+
+              <div class="shine_amount_wrapper">
+
+                <div><img
+                    src="https://staging.baro-pfannenstein.de/lp03-426-frontend-contribute-to/assets/images/contribution-shine_left.png"
+                    alt=""></div>
+                <div class="amount" style=" margin:0 auto;  ">
+
+
+                  <div class="strong_amount" style="margin: auto auto;">{{default.contribution_net_amount_orange}}
+                  </div>
+
+
+                </div>
+                <div><img
+                    src="https://staging.baro-pfannenstein.de/lp03-426-frontend-contribute-to/assets/images/contribution-shine_right.png"
+                    alt=""></div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="align-center" style=" padding-top: 60px !important; padding-bottom: 30px; font-size:16px;"><a
+              href="{{default.backendLink}}">Check your
+              account for more
+              details</a></td>
+        </tr>
+      </table>
+
+      <div class="footer">
+        <table>
+          <tr>
+          <tr>
+            <td>
+              <hr class="solid--bottom">
+            </td>
+          </tr>
+          <td class="align-center footer-wrapper">
+            <a href="{{default.backendLink}}"><img src="https://contribute.to/assets/images/ic-contribute-to.png"
+                alt="Contribute.to" alt="Contribute.to" class="secondary-logo"></a>
+            <p><a href="https://contribute.to">Contribute.to</a> is a service of LaterPay, Inc. <br> LaterPay, Inc. 205
+              E 42nd St, New York, NY 10017, USA</p>
+            <p><a href="#" style="color:#40B4E5">Data Privacy</a> &#124; <a href="#" style="color:#40B4E5">Terms &
+                Conditions</a> &#124; <a href="{{default.tag_unsubscribe_url}}" style="color:#40B4E5">Unsubscribe</a>
+            </p>
+          </td>
+  </tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
